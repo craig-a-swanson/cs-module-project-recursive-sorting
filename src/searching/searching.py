@@ -1,5 +1,6 @@
 # TO-DO: Implement a recursive implementation of binary search
 def binary_search(arr, target, start, end):
+<<<<<<< HEAD
     # if empty array, return -1
     # otherwise, find the midpoint and test its equal to target
     # if equal, return its index
@@ -22,6 +23,7 @@ def binary_search(arr, target, start, end):
         return binary_search(arr, target, start, end)
 
     return -1
+
 
 
 
