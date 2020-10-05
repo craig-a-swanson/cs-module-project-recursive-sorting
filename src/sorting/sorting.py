@@ -90,13 +90,15 @@ def merge_in_place(arr, start, mid, end):
 
     return arr
 
+# [3, 44, 38, 5]
+
 def merge_sort_in_place(arr, l, r):
     if l < r:
         mid = (l + (r - 1)) // 2
 
         merge_sort_in_place(arr, l, mid)
         merge_sort_in_place(arr, mid + 1, r)
-        print(f'arr: {arr} start {l} mid {mid} end {r}')
+        # print(f'arr: {arr} start {l} mid {mid} end {r}')
         arr = merge_in_place(arr, l, mid, r)
-        print(f'before return {arr}')
+        # print(f'before return {arr}')
     return arr
